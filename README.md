@@ -1,5 +1,5 @@
 # Currency Textfield for Material UI version 5 (MUI)
-[![npm version](https://badge.fury.io/js/%40unicef%2Fmaterial-ui-currency-textfield.svg)](https://badge.fury.io/js/%40unicef%2Fmaterial-ui-currency-textfield)
+[![npm version](https://badge.fury.io/js/@lupus-ai%2Fmui-currency-textfield.svg)](https://www.npmjs.com/package/@lupus-ai/mui-currency-textfield)
 
 `CurrencyTextField` is a [MUI v5](https://mui.com/) [React](https://reactjs.org/) component and provides a user friendly experience while inputing currency numbers.
 
