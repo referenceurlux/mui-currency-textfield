@@ -1,6 +1,6 @@
 {
   "name": "@lupus-ai/mui-currency-textfield",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Currency input textfield for react with Material-ui style",
   "keywords": [
     "material design",
@@ -14,7 +14,7 @@
   "homepage": "https://lupusai.github.io/mui-currency-textfield/",
   "scripts": {
     "build": "webpack",
-    "start": "rollup -c -w",
+    "start": "webpack serve",
     "styleguide": "styleguidist server",
     "predeploy": "styleguidist build",
     "deploy": "gh-pages -d styleguide",
