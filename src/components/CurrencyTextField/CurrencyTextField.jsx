@@ -114,7 +114,7 @@ class CurrencyTextField extends React.Component {
         onKeyDown={(e) => this.callEventHandler(e, "onKeyDown")}
         InputProps={{
           startAdornment: (
-            <InputAdornment position="start">{currencySymbol}</InputAdornment>
+            <InputAdornment position={props.inputAdornmentPosition}>{currencySymbol}</InputAdornment>
           ),
           ...InputProps,
         }}
@@ -200,6 +200,7 @@ CurrencyTextField.propTypes = {
   readOnly: PropTypes.bool,
   /** predefined objects are available in <a href="https://www.nodenpm.com/autonumeric/4.5.1/detail.html#predefined-options">AutoNumeric</a>*/
   preDefined: PropTypes.object,
+  inputAdornmentPosition:PropTypes.oneOf(["start", "end"]),
 }
 
 CurrencyTextField.defaultProps = {
@@ -210,6 +211,7 @@ CurrencyTextField.defaultProps = {
   textAlign: "right",
   maximumValue: "10000000000000",
   minimumValue: "-10000000000000",
+  inputAdornmentPosition: "end"
 }
 export default withStyles(CurrencyTextField, styles)
 
