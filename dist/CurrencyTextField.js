@@ -150,13 +150,9 @@ var CurrencyTextField = /*#__PURE__*/function (_React$Component) {
         onKeyDown: function onKeyDown(e) {
           return _this2.callEventHandler(e, "onKeyDown");
         },
-        InputProps: this.props['adornmentPosition'] === 'end' ? _objectSpread({
+        InputProps: _objectSpread({
           endAdornment: /*#__PURE__*/_react["default"].createElement(_material.InputAdornment, {
             position: "end"
-          }, currencySymbol)
-        }, InputProps) : _objectSpread({
-          startAdornment: /*#__PURE__*/_react["default"].createElement(_material.InputAdornment, {
-            position: "start"
           }, currencySymbol)
         }, InputProps),
         inputProps: _objectSpread({
@@ -238,9 +234,7 @@ CurrencyTextField.propTypes = {
   /** Defines if the element should be set as read only on initialization. */
   readOnly: _propTypes["default"].bool,
   /** predefined objects are available in <a href="https://www.nodenpm.com/autonumeric/4.5.1/detail.html#predefined-options">AutoNumeric</a>*/
-  preDefined: _propTypes["default"].object,
-  /** Input adornment position */
-  adornmentPosition: _propTypes["default"].oneOf(["start", "end"])
+  preDefined: _propTypes["default"].object
 };
 CurrencyTextField.defaultProps = {
   type: "text",
@@ -249,8 +243,7 @@ CurrencyTextField.defaultProps = {
   outputFormat: "number",
   textAlign: "right",
   maximumValue: "10000000000000",
-  minimumValue: "-10000000000000",
-  adornmentPosition: "end"
+  minimumValue: "-10000000000000"
 };
 var _default = (0, _mui.withStyles)(CurrencyTextField, styles);
 exports["default"] = _default;
